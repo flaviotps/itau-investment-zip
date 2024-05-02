@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+    body {
+      background-color: #eeeeee; /* GitHub dark mode background color */
+    }
+  </style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="projeto-itau-investment">Projeto Itau-Investment</h1>
+<p><img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&amp;logo=android&amp;logoColor=white" alt="Android"><br>
+<img src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&amp;logo=kotlin&amp;logoColor=white" alt="Kotlin"><br>
+<img src="https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&amp;logo=Gradle&amp;logoColor=white" alt="Gradle"></p>
+<p><img src="https://img.shields.io/badge/Compose-8A2BE2" alt=""><br>
+<img src="https://img.shields.io/badge/minSdk-25-4433E2" alt=""><br>
+<img src="https://img.shields.io/badge/compileSdk-34-4433E2" alt=""><br>
+<img src="https://img.shields.io/badge/gradle-8.4-FFFB8C" alt=""></p>
+<p>Repositórios Relacionados</p>
+<ul>
+<li><a href="https://github.com/flaviotps/ItauInvestiments">https://github.com/flaviotps/ItauInvestiments</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-analytics">https://github.com/flaviotps/itau-investment-analytics</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-home">https://github.com/flaviotps/itau-investment-home</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-stocks">https://github.com/flaviotps/itau-investment-stocks</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-ui-components">https://github.com/flaviotps/itau-investment-ui-components</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-network">https://github.com/flaviotps/itau-investment-network</a></li>
+</ul>
+<h2 id="descrição">Descrição</h2>
+<p>O projeto consiste em um aplicativo Android modular com os seguintes módulos: <code>app</code>, <code>home</code>, <code>stock</code>, <code>network</code>, <code>ui-components</code> e <code>analytics</code>. Cada módulo desempenha um papel específico na aplicação, facilitando a manutenção e a escalabilidade do código. Além disso, foram aplicados princípios como <code>SOLID</code> e <code>DRY</code> para promover uma arquitetura limpa e modular.</p>
+<div>
+    <img src="https://imgur.com/u1Gb6Xv.png" alt="Imagens do Aplicativo">
+    <img src="https://imgur.com/r2rXvlS.png" alt="Imagens do Aplicativo">
+    <img src="https://imgur.com/f36mXnZ.png" alt="Imagens do Aplicativo">
+    <img src="https://imgur.com/VvC9rdi.png" alt="Imagens do Aplicativo">
+    <img src="https://imgur.com/yqgxF7F.png" alt="Imagens do Aplicativo">
+    <img src="https://imgur.com/Scwi0ax.png" alt="Imagens do Aplicativo">
+    <img src="https://imgur.com/cf5V8P3.png" alt="Imagens do Aplicativo">
+</div>
+<h2 id="rodar-o-projeto">Rodar o Projeto</h2>
+<p>Esse projeto utiliza <code>multi-git</code>, por isso é necessário executar o clone dos repositorios abaixo.</p>
+<p>1.Clone o repositório do projeto principal:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://github.com/flaviotps/ItauInvestiments.git
+</code></pre>
+<ol start="2">
+<li>
+<p>Navegue até o diretório <code>ItauInvestiments</code>, use o comando <code>cd ItauInvestiments</code> no terminal.</p>
+</li>
+<li>
+<p>Clone os repositórios abaixo:</p>
+</li>
+</ol>
+<ul>
+<li>itau-investment-ui-components<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://github.com/flaviotps/itau-investment-ui-components.git
+</code></pre>
+</li>
+<li>itau-investment-analytics<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://github.com/flaviotps/itau-investment-analytics.git
+</code></pre>
+</li>
+<li>itau-investment-network<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://github.com/flaviotps/itau-investment-network.git
+</code></pre>
+</li>
+<li>itau-investment-stocks<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://github.com/flaviotps/itau-investment-stocks.git
+</code></pre>
+</li>
+<li>itau-investment-home<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://github.com/flaviotps/itau-investment-home.git
+</code></pre>
+</li>
+</ul>
+<ol start="4">
+<li>
+<p>Abra o projeto no Android Studio (Artic Fox - 2022.1 ou superior).</p>
+</li>
+<li>
+<p>Execute o projeto <code>run</code>.</p>
+</li>
+</ol>
+<p>Você também pode gerar o APK (debug) com os seguintes passos:</p>
+<ol>
+<li>
+<p>Executar diretamente pela IDE ou a task <code>./gradlew assemble</code> no terminal da IDE</p>
+</li>
+<li>
+<p>APK será gerado e estará localizado no diretório <code>app/build/outputs/apk/</code></p>
+</li>
+<li>
+<p>Envie o APK para o seu aparelho ou arraste para o emulador.</p>
+</li>
+</ol>
+<h2 id="estratégia-de-implementação-modular">Estratégia de Implementação Modular</h2>
+<p>A estratégia de implementação modular traz consigo uma série de vantagens significativas que contribuem para a robustez e escalabilidade do aplicativo. Aqui estão algumas vantagens-chave:</p>
+<h3 id="baixo-acoplamento">Baixo Acoplamento</h3>
+<p>Cada módulo é desenvolvido de forma independente, o que reduz o acoplamento entre eles. Isso significa que as alterações em um módulo têm menos probabilidade de afetar outros, facilitando a manutenção e a evolução do sistema.</p>
+<h3 id="alta-coesão">Alta Coesão</h3>
+<p>Os módulos são projetados para ter alta coesão, o que significa que cada módulo executa uma função específica e bem definida. Isso melhora a legibilidade do código e simplifica o entendimento das responsabilidades de cada parte do sistema.</p>
+<h3 id="reutilização-de-código">Reutilização de Código</h3>
+<p>Com a modularidade, é mais fácil identificar e reutilizar componentes comuns em diferentes partes do aplicativo. Isso reduz a duplicação de código e promove uma base de código mais limpa e eficiente.</p>
+<h3 id="facilidade-de-teste">Facilidade de Teste</h3>
+<p>Os módulos independentes são mais fáceis de testar, pois podem ser isolados para testes unitários e de integração. Isso simplifica o processo de garantir a qualidade do software e facilita a identificação e correção de problemas.</p>
+<h3 id="manutenibilidade">Manutenibilidade</h3>
+<p>A arquitetura modular facilita a manutenção do aplicativo a longo prazo, pois permite que desenvolvedores trabalhem em partes específicas do sistema sem afetar o resto do código. Isso simplifica a adição de novos recursos, correção de bugs e atualizações de segurança.</p>
+<h3 id="escalabilidade">Escalabilidade</h3>
+<p>Com a modularidade, o aplicativo está preparado para escalar de forma mais eficiente. Novos módulos podem ser adicionados conforme necessário, e a arquitetura flexível permite que o sistema cresça para lidar com novos requisitos e demandas dos usuários.</p>
+<p>Em resumo, a estratégia de implementação modular proporciona uma base sólida para o desenvolvimento de aplicativos robustos, flexíveis e fáceis de manter. Ao adotar essa abordagem, as equipes de desenvolvimento podem criar sistemas mais resilientes e adaptáveis, preparados para enfrentar os desafios do ambiente digital em constante evolução.</p>
+<h2 id="estratégia-de-implementação-arquitetural-mvvm">Estratégia de Implementação Arquitetural (MVVM)</h2>
+<p>Ao adotar a arquitetura MVVM no desenvolvimento Android, os benefícios incluem uma clara separação de responsabilidades entre Model, View e ViewModel.<br>
+Isso facilita a manutenção do código, permite reutilização de componentes e simplifica testes unitários. Além disso, o ViewModel sobrevive a recriações de Activities, garantindo a persistência de dados e evitando problemas de estado da UI.</p>
+<p><code>Model</code>: Representa os dados e a lógica de negócios.</p>
+<p><code>View</code>: Representa a interface do usuário (UI).</p>
+<p><code>ViewModel</code>: Age como um intermediário entre o Model e a View, gerenciando o estado da UI e expondo dados e comandos para a View.</p>
+<h3 id="aprimorando-o-mvvm-com-mvvmclean">Aprimorando o MVVM com MVVM+CLEAN</h3>
+<p>O MVVM, pode ser insuficiente em projetos de grande porte. Para aprimorá-lo, é necessário integrar outras camadas, como as propostas pelo <code>CLEAN ARCHITETURE</code>.</p>
+<h4 id="repository">Repository</h4>
+<p>O repositório age como uma camada intermediária entre as diversas fontes de dados (remotas e locais) e o restante da aplicação. Ele oferece uma interface única para acessar dados, promovendo a coesão e facilitando a manutenção do código, além de permitir a troca transparente entre diferentes fontes de dados.</p>
+<h4 id="data-sources">Data Sources</h4>
+<p>Os data sources são responsáveis por gerenciar a obtenção e persistência de dados utilizando um <code>Service</code>.<br>
+Essa camada é responsavel por fazer as configurações necessarias de um <code>Service</code>.</p>
+<h4 id="service">Service</h4>
+<p>É responsável por interagir com os recursos internos e externos.</p>
+<h2 id="módulo-app">Módulo App</h2>
+<p>O módulo <code>app</code> contém apenas classes de navegação e a classe MainActivity.</p>
+<h2 id="estratégia-de-versionamento">Estratégia de Versionamento</h2>
+<p>Em um projeto Android multimodular, ter um repositório Git por módulo oferece uma série de benefícios significativos. Aqui estão algumas razões importantes:</p>
+<ul>
+<li>
+<p>Isolamento de Alterações</p>
+</li>
+<li>
+<p>Controle de Acesso e Permissões</p>
+</li>
+<li>
+<p>Gerenciamento de Dependências</p>
+</li>
+</ul>
+<img src="https://imgur.com/SAEgNUX.png" alt="Imagens do Aplicativo">
+  <img src="https://imgur.com/ZXJ0ykq.png" alt="Imagens do Aplicativo">
+<div>
+<img src="https://imgur.com/aSX2vC3.png" alt="Imagens do Aplicativo">
+ </div>
+<h2 id="módulo-home">Módulo Home</h2>
+<p>O módulo “Home” se baseia nos módulos <code>network</code>, <code>analytics</code> e <code>ui-components</code> para criar telas específicas desta funcionalidade.<br>
+Todas as regras de negócio e funcionalidades exclusivas do módulo estão concentradas aqui.</p>
+<h2 id="módulo-stocks">Módulo Stocks</h2>
+<p>O módulo “Stocks” utiliza os módulos <code>network</code>, <code>analytics</code> e <code>ui-components</code> para implementar telas específicas dessa funcionalidade.<br>
+Todas as regras de negócio e funcionalidades exclusivas do módulo estão centralizadas aqui.</p>
+<h2 id="módulo-network">Módulo Network</h2>
+<p>O módulo <code>Network</code> é responsável por gerenciar as operações de rede, incluindo métodos para realizar solicitações HTTPS.</p>
+<p>Todas as solicitações feitas neste projeto devem aderir a um padrão de retorno consistente. Para isso, foi desenvolvida uma classe que controla os estados de uma solicitação.</p>
+<p>A classe NetworkResult encapsula esses estados:</p>
+<pre class=" language-kotlin"><code class="prism  language-kotlin"><span class="token keyword">sealed</span> <span class="token keyword">interface</span> NetworkResult<span class="token operator">&lt;</span>T <span class="token operator">:</span> Any<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">class</span> Success<span class="token operator">&lt;</span>T <span class="token operator">:</span> Any<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token keyword">val</span> <span class="token keyword">data</span><span class="token operator">:</span> T<span class="token punctuation">)</span> <span class="token operator">:</span> NetworkResult<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span>
+    <span class="token keyword">class</span> Error<span class="token operator">&lt;</span>T <span class="token operator">:</span> Any<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token keyword">val</span> code<span class="token operator">:</span> Int<span class="token punctuation">,</span> <span class="token keyword">val</span> message<span class="token operator">:</span> String<span class="token operator">?</span><span class="token punctuation">)</span> <span class="token operator">:</span> NetworkResult<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span>
+    <span class="token keyword">class</span> Exception<span class="token operator">&lt;</span>T <span class="token operator">:</span> Any<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token keyword">val</span> exception<span class="token operator">:</span> Throwable<span class="token punctuation">)</span> <span class="token operator">:</span> NetworkResult<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="estados-da-interface-networkresultt--any">Estados da Interface <code>NetworkResult&lt;T : Any&gt;</code></h2>
+<h3 id="successt--any">Success</h3>
+<ul>
+<li>Este estado representa o sucesso da operação de rede.</li>
+<li>Quando uma solicitação é concluída com sucesso, este estado é retornado.</li>
+<li>Ele carrega os dados resultantes da operação de rede, representados pelo tipo genérico <code>T</code>.</li>
+</ul>
+<h3 id="errort--any">Error</h3>
+<ul>
+<li>Este estado indica que ocorreu um erro durante a operação de rede.</li>
+<li>Ele inclui um código de erro (<code>code</code>) para identificar o tipo de erro que ocorreu.</li>
+<li>Além disso, pode conter uma mensagem de erro (<code>message</code>) opcional para fornecer informações adicionais sobre o erro.</li>
+</ul>
+<h3 id="exceptiont--any">Exception</h3>
+<ul>
+<li>Este estado representa uma exceção lançada durante a operação de rede.</li>
+<li>Se ocorrer uma exceção não tratada durante a execução da solicitação, este estado será retornado.</li>
+<li>Ele carrega a exceção (<code>exception</code>) lançada.</li>
+</ul>
+<p>Para criar um serviço no estilo Retrofit, basta instanciar sua classe de serviço. Abaixo está um exemplo de como usar o NetworkClient:</p>
+<pre class=" language-kotlin"><code class="prism  language-kotlin"><span class="token keyword">val</span> investmentRemoteService <span class="token operator">=</span> <span class="token function">NetworkClient</span><span class="token punctuation">(</span>InvestmentService<span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">.</span>java<span class="token punctuation">)</span>
+</code></pre>
+<p>Dessa forma, uma instância da interface <code>InvestmentService</code> é automaticamente implementada pelo mecanismo do <code>Retrofit</code>. O <code>NetworkClient</code> mantém as configurações de rede centralizadas, como URL, interceptadores, adaptadores, etc.</p>
+<h2 id="módulo-ui-components">Módulo UI-Components</h2>
+<p>O módulo <code>ui-components</code> foi desenvolvido com o objetivo de fornecer uma variedade de componentes de interface do usuário reutilizáveis, como botões, caixas de diálogo, barras de progresso, entre outros. Um exemplo de componente reutilizável é mostrado abaixo:</p>
+<pre class=" language-kotlin"><code class="prism  language-kotlin"><span class="token comment">/**
+ * Composable function to display an expandable card.
+ *
+ * @param initialState Initial state of the card (expanded or collapsed).
+ * @param titleContent Content of the title section.
+ * @param content Content of the expandable section.
+ */</span>
+<span class="token annotation builtin">@Composable</span>
+<span class="token keyword">fun</span> <span class="token function">ExpandableCard</span><span class="token punctuation">(</span>
+    modifier<span class="token operator">:</span> Modifier <span class="token operator">=</span> Modifier<span class="token punctuation">,</span>
+    initialState<span class="token operator">:</span> Boolean <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    titleContent<span class="token operator">:</span> <span class="token annotation builtin">@Composable</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> Unit<span class="token punctuation">,</span>
+    content<span class="token operator">:</span> <span class="token annotation builtin">@Composable</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> Unit
+<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> expanded <span class="token keyword">by</span> remember <span class="token punctuation">{</span> <span class="token function">mutableStateOf</span><span class="token punctuation">(</span>initialState<span class="token punctuation">)</span> <span class="token punctuation">}</span>
+    <span class="token keyword">val</span> icon <span class="token operator">=</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>expanded<span class="token punctuation">)</span> Icons<span class="token punctuation">.</span>Rounded<span class="token punctuation">.</span>KeyboardArrowUp <span class="token keyword">else</span> Icons<span class="token punctuation">.</span>Rounded<span class="token punctuation">.</span>KeyboardArrowDown
+
+    <span class="token function">Card</span><span class="token punctuation">(</span>
+        elevation <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">.</span>dp<span class="token punctuation">,</span>
+        shape <span class="token operator">=</span> <span class="token function">RoundedCornerShape</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">.</span>dp<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        border <span class="token operator">=</span> <span class="token function">BorderStroke</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">.</span>dp<span class="token punctuation">,</span> Color<span class="token punctuation">.</span>LightGray<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        modifier <span class="token operator">=</span> Modifier
+            <span class="token punctuation">.</span><span class="token function">fillMaxWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">padding</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">.</span>dp<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">clickable</span> <span class="token punctuation">{</span>
+                expanded <span class="token operator">=</span> <span class="token operator">!</span>expanded
+            <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">Column</span><span class="token punctuation">(</span>modifier <span class="token operator">=</span> Modifier<span class="token punctuation">.</span><span class="token function">padding</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">.</span>dp<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fillMaxWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">Row</span><span class="token punctuation">(</span>
+                modifier <span class="token operator">=</span> Modifier<span class="token punctuation">.</span><span class="token function">fillMaxWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                verticalAlignment <span class="token operator">=</span> Alignment<span class="token punctuation">.</span>CenterVertically<span class="token punctuation">,</span>
+                horizontalArrangement <span class="token operator">=</span> Arrangement<span class="token punctuation">.</span>SpaceBetween
+            <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">Row</span><span class="token punctuation">(</span>modifier <span class="token operator">=</span> Modifier<span class="token punctuation">.</span><span class="token function">padding</span><span class="token punctuation">(</span>all <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">.</span>dp<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token function">titleContent</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+                <span class="token function">Image</span><span class="token punctuation">(</span>
+                    modifier <span class="token operator">=</span> Modifier<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">.</span>dp<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    imageVector <span class="token operator">=</span> icon<span class="token punctuation">,</span>
+                    colorFilter <span class="token operator">=</span> ColorFilter<span class="token punctuation">.</span><span class="token function">tint</span><span class="token punctuation">(</span>color <span class="token operator">=</span> Color<span class="token punctuation">.</span>Black<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    contentDescription <span class="token operator">=</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>expanded<span class="token punctuation">)</span> <span class="token string">"Collapse"</span> <span class="token keyword">else</span> <span class="token string">"Expand"</span>
+                <span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>expanded<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">Divider</span><span class="token punctuation">(</span>thickness <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">.</span>dp<span class="token punctuation">)</span>
+                <span class="token function">content</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="outros-componentes">Outros componentes</h3>
+<ul>
+<li><a href="https://github.com/flaviotps/itau-investment-ui-components/tree/master/src/main/java/br/com/itau/app/ui_components/card">card</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-ui-components/tree/master/src/main/java/br/com/itau/app/ui_components/carousel">carousel</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-ui-components/tree/master/src/main/java/br/com/itau/app/ui_components/commons">commonns</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-ui-components/tree/master/src/main/java/br/com/itau/app/ui_components/graph">graph</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-ui-components/tree/master/src/main/java/br/com/itau/app/ui_components/text">text</a></li>
+<li><a href="https://github.com/flaviotps/itau-investment-ui-components/tree/master/src/main/java/br/com/itau/app/ui_components/theme">theme</a></li>
+</ul>
+<h2 id="módulo-analytics">Módulo Analytics</h2>
+<p>Estes exemplos demonstram como registrar eventos específicos, como cliques em elementos da interface ou transições entre telas, utilizando o módulo de analytics. Esses dados são cruciais para entender o envolvimento do usuário e aprimorar continuamente a experiência oferecida.</p>
+<h3 id="rastreando-clicks">Rastreando clicks</h3>
+<pre class=" language-kotlin"><code class="prism  language-kotlin"><span class="token keyword">val</span> params <span class="token operator">=</span> <span class="token function">mapOf</span><span class="token punctuation">(</span><span class="token string">"stock_name"</span> <span class="token keyword">to</span> stock<span class="token punctuation">.</span>name<span class="token punctuation">,</span> 
+                   <span class="token string">"stock_price"</span> <span class="token keyword">to</span> stock<span class="token punctuation">.</span>price<span class="token punctuation">)</span>
+
+ItauAnalytics<span class="token punctuation">.</span><span class="token function">logEvent</span><span class="token punctuation">(</span>ItauAnalytics<span class="token punctuation">.</span>CLICK<span class="token punctuation">,</span>params<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="rastreando-navegação">Rastreando navegação</h3>
+<pre class=" language-kotlin"><code class="prism  language-kotlin"><span class="token keyword">const</span> <span class="token keyword">val</span> SCREEN_HOME_TAB <span class="token operator">=</span> <span class="token string">"SCREEN_HOME_TAB"</span>
+ItauAnalytics<span class="token punctuation">.</span><span class="token function">logEvent</span><span class="token punctuation">(</span>ItauAnalytics<span class="token punctuation">.</span>SCREEN_NAME<span class="token punctuation">,</span> SCREEN_HOME_TAB<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="painel-do-google-analytics">Painel do Google Analytics</h3>
+<p>No painel do Google Analytics, as informações enviadas, juntamente com um conjunto de dados importantes, são apresentadas de maneira organizada e acessível. Aqui, você pode explorar uma ampla gama de métricas e insights, permitindo uma compreensão mais profunda do desempenho e do comportamento do seu público-alvo.</p>
+ <img src="https://imgur.com/wtj303L.png" alt="Imagens do Aplicativo" width="100%">
+<img src="https://imgur.com/cA4mutO.png" alt="Imagens do Aplicativo" width="100%">
+<h2 id="testes">Testes</h2>
+<p>Testes automatizados garantem a qualidade do código, detectam bugs rapidamente, facilitam a refatoração e servem como documentação viva do comportamento do sistema, aumentando a confiança no software.</p>
+<h3 id="exemplo-de-teste-instrumentado-ui">Exemplo de Teste Instrumentado (UI)</h3>
+<pre class=" language-kotlin"><code class="prism  language-kotlin"><span class="token keyword">class</span> ExpandableCardTest <span class="token punctuation">{</span>
+
+    <span class="token annotation builtin">@get:Rule</span>
+    <span class="token keyword">val</span> composeTestRule <span class="token operator">=</span> <span class="token function">createComposeRule</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token annotation builtin">@Test</span>
+    <span class="token keyword">fun</span> <span class="token function">expandableCard_InitialState_Collapsed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        composeTestRule<span class="token punctuation">.</span><span class="token function">setContent</span> <span class="token punctuation">{</span>
+            <span class="token function">ExpandableCard</span><span class="token punctuation">(</span>
+                initialState <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                titleContent <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token function">Text</span><span class="token punctuation">(</span>text <span class="token operator">=</span> <span class="token string">"Title"</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                content <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token function">Text</span><span class="token punctuation">(</span>text <span class="token operator">=</span> <span class="token string">"Content"</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        composeTestRule<span class="token punctuation">.</span><span class="token function">onNodeWithText</span><span class="token punctuation">(</span><span class="token string">"Content"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">assertDoesNotExist</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation builtin">@Test</span>
+    <span class="token keyword">fun</span> <span class="token function">expandableCard_InitialState_Expanded</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        composeTestRule<span class="token punctuation">.</span><span class="token function">setContent</span> <span class="token punctuation">{</span>
+            <span class="token function">ExpandableCard</span><span class="token punctuation">(</span>
+                initialState <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                titleContent <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token function">Text</span><span class="token punctuation">(</span>text <span class="token operator">=</span> <span class="token string">"Title"</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                content <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token function">Text</span><span class="token punctuation">(</span>text <span class="token operator">=</span> <span class="token string">"Content"</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+        composeTestRule<span class="token punctuation">.</span><span class="token function">onNodeWithText</span><span class="token punctuation">(</span><span class="token string">"Content"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">assertIsDisplayed</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation builtin">@Test</span>
+    <span class="token keyword">fun</span> <span class="token function">expandableCard_ClickToExpandAndCollapse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        composeTestRule<span class="token punctuation">.</span><span class="token function">setContent</span> <span class="token punctuation">{</span>
+            <span class="token function">ExpandableCard</span><span class="token punctuation">(</span>
+                initialState <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                titleContent <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token function">Text</span><span class="token punctuation">(</span>text <span class="token operator">=</span> <span class="token string">"Title"</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                content <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token function">Text</span><span class="token punctuation">(</span>text <span class="token operator">=</span> <span class="token string">"Content"</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+        composeTestRule<span class="token punctuation">.</span><span class="token function">onNodeWithContentDescription</span><span class="token punctuation">(</span><span class="token string">"Collapse"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">performClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        composeTestRule<span class="token punctuation">.</span><span class="token function">onNodeWithText</span><span class="token punctuation">(</span><span class="token string">"Content"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">assertIsDisplayed</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        composeTestRule<span class="token punctuation">.</span><span class="token function">onNodeWithContentDescription</span><span class="token punctuation">(</span><span class="token string">"Collapse"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">performClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        composeTestRule<span class="token punctuation">.</span><span class="token function">onNodeWithText</span><span class="token punctuation">(</span><span class="token string">"Content"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">assertDoesNotExist</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="exemplo-de-testes-unitários">Exemplo de testes unitários</h3>
+<pre class=" language-kotlin"><code class="prism  language-kotlin">    <span class="token annotation builtin">@Test</span>
+    <span class="token keyword">fun</span> `listAssets should <span class="token keyword">return</span> success`<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span>  runTest <span class="token punctuation">{</span>
+
+        <span class="token keyword">val</span> investments <span class="token operator">=</span> <span class="token function">listOf</span><span class="token punctuation">(</span>
+            <span class="token function">InvestmentData</span><span class="token punctuation">(</span><span class="token string">"Petrobras SA"</span><span class="token punctuation">,</span> <span class="token string">"PETR4"</span><span class="token punctuation">,</span> <span class="token number">154f</span><span class="token punctuation">,</span> <span class="token number">14.52</span><span class="token punctuation">,</span> <span class="token string">"Ação"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token function">InvestmentData</span><span class="token punctuation">(</span><span class="token string">"Tesouro Direto NTNB-B"</span><span class="token punctuation">,</span> <span class="token string">"Tesouro_1"</span><span class="token punctuation">,</span> <span class="token number">50f</span><span class="token punctuation">,</span> <span class="token number">11.16</span><span class="token punctuation">,</span> <span class="token string">"Tesouro"</span><span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+
+        coEvery <span class="token punctuation">{</span> investmentsRepository<span class="token punctuation">.</span><span class="token function">listAssets</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span> returns NetworkResult<span class="token punctuation">.</span><span class="token function">Success</span><span class="token punctuation">(</span>investments<span class="token punctuation">)</span>
+
+
+        viewModel<span class="token punctuation">.</span><span class="token function">listAssets</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        verify <span class="token punctuation">{</span>
+            stateObserver<span class="token punctuation">.</span><span class="token function">onChanged</span><span class="token punctuation">(</span>
+                match <span class="token punctuation">{</span>
+                    it <span class="token keyword">is</span> HomeState<span class="token punctuation">.</span>OnInvestmentsLoaded <span class="token operator">&amp;&amp;</span> it<span class="token punctuation">.</span>investments <span class="token operator">==</span> investments
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="considerações-finais">Considerações Finais</h3>
+<p>O projeto usa o modelo MVVM+CLEAN para organizar o código, o Jetpack Compose para criar a interface do usuário de forma moderna. Seguindo os princípios SOLID, evita repetições desnecessárias, tornando o código mais limpo e fácil de entender. Isso resulta em um aplicativo Android bem estruturado, ágil e de fácil manutenção.</p>
+</div>
+</body>
+
+</html>

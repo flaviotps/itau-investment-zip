@@ -1,0 +1,5 @@
+A documentação do projeto é melhor visualizada em:
+
+https://github.com/flaviotps/ItauInvestiments
+
+Caso não tenha acesso, a página DOC.html contém a documentação em formato HTML.
